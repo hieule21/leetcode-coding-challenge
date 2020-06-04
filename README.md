@@ -9,7 +9,7 @@ Below are how I approach problems and what I learned when solving LeetCode probl
 | 1   | [Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/)                                               | Easy       | [invertBinaryTree.java](https://github.com/hieuvanle/codingChallenge/blob/master/leetcodeProblems/01-invertBinaryTree.java)               |Time: O(1) - Space: O(n)|                                                                              |
 | 2   | [Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list/)                           | Easy       | [deleteNodeInALinkedList.java](https://github.com/hieuvanle/codingChallenge/blob/master/leetcodeProblems/02-deleteNodeInALinkedList.java) |Time: O(1) - Space: O(1)|
 | 3   | [Two City Scheduling](https://leetcode.com/problems/two-city-scheduling/)                                             | Easy       | [twoCitySchedCost.java](https://github.com/hieuvanle/codingChallenge/blob/master/leetcodeProblems/03-twoCityScheduling.java)              |Time: O(nlogn) - Space: O(n)|
-| 4   |                                                                                                                       |            |                                                                                                                                           |                    |
+| 4   | [Reverse String](https://leetcode.com/problems/reverse-string/)                                                       | Easy       | [reverseString.java](https://github.com/hieuvanle/codingChallenge/blob/master/leetcodeProblems/04-reverseString.java)                     |Time: O(n) - Space: O(1)|
 | 5   |                                                                                                                       |            |                                                                                                                                           |                    |
 | 6   |                                                                                                                       |            |                                                                                                                                           |                    |
 | 7   |                                                                                                                       |            |                                                                                                                                           |                    |
@@ -58,3 +58,10 @@ Below are how I approach problems and what I learned when solving LeetCode probl
 3. Sort the array to get the cheapest costs to send N people to city B (the other N people go to city A).
 
 4. Add all the costs for 2N people going to city A then substract the cheapest cost.
+
+## [reverseString](https://github.com/hieuvanle/codingChallenge/blob/master/leetcodeProblems/04-reverseString.java)
+
+1. Using two pointers to get the positions of chars that we need to swap.
+
+2. Swap s[i] and s[s.length - i -1].
+
