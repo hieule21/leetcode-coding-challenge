@@ -36,4 +36,9 @@ Below are how I approach problems and what I learned when solving LeetCode probl
 | 28  |                                                                                                                       |            |                                                                                                                                           |
 | 29  |                                                                                                                       |            |                                                                                                                                           |
 | 30  |                                                                                                                       |            |                                                                                                                                           |
-                                                                                                                                           
+
+## [invertBinaryTree](https://github.com/hieuvanle/codingChallenge/blob/master/leetcodeProblems/01-invertBinaryTree.java)
+
+1. We invert left node and right node first. 
+
+2. Use **Postorder** traversal (left -> right -> root).
