@@ -48,3 +48,13 @@ Below are how I approach problems and what I learned when solving LeetCode probl
 1. We are given the node with its position and value. 
 
 2. Take value from the next node and skip it.
+
+## [twoCitySchedCost](https://github.com/hieuvanle/codingChallenge/blob/master/leetcodeProblems/02-deleteNodeInALinkedList.java)
+
+1. Construct an array with elements being the subtraction between the cost to city B and the cost to city A.
+
+2. Negative element tells us that it is cheaper to go to city B.
+
+3. Sort the array to get the cheapest costs to send N people to city B (the other N people go to city A).
+
+4. Add all the costs for 2N people going to city A then substract the cheapest cost.
