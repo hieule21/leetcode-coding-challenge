@@ -6,11 +6,11 @@ Below are how I approach problems and what I learned when solving LeetCode probl
 
 | Day | Problem                                                                                                               | Difficulty | My Solution                                                                                                                               | Complexity Analysis|
 | --- | --------------------------------------------------------------------------------------------------------------------- | ---------- | ----------------------------------------------------------------------------------------------------------------------------------------- |--------------------|                  
-| 1   | [Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/)                                               | Easy       | [invertBinaryTree.java](https://github.com/hieuvanle/codingChallenge/blob/master/leetcodeProblems/01-invertBinaryTree.java)               |Time: O(1) - Space: O(n)|                                                                              |
+| 1   | [Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/)                                               | Easy       | [invertBinaryTree.java](https://github.com/hieuvanle/codingChallenge/blob/master/leetcodeProblems/01-invertBinaryTree.java)               |Time: O(1) - Space: O(n)|
 | 2   | [Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list/)                           | Easy       | [deleteNodeInALinkedList.java](https://github.com/hieuvanle/codingChallenge/blob/master/leetcodeProblems/02-deleteNodeInALinkedList.java) |Time: O(1) - Space: O(1)|
 | 3   | [Two City Scheduling](https://leetcode.com/problems/two-city-scheduling/)                                             | Easy       | [twoCitySchedCost.java](https://github.com/hieuvanle/codingChallenge/blob/master/leetcodeProblems/03-twoCityScheduling.java)              |Time: O(nlogn) - Space: O(n)|
 | 4   | [Reverse String](https://leetcode.com/problems/reverse-string/)                                                       | Easy       | [reverseString.java](https://github.com/hieuvanle/codingChallenge/blob/master/leetcodeProblems/04-reverseString.java)                     |Time: O(n) - Space: O(1)|
-| 5   |                                                                                                                       |            |                                                                                                                                           |                    |
+| 5   | [Random Pick with Weight](https://leetcode.com/problems/random-pick-with-weight/)                                     | Medium     | [randomPickWithWeight.java](https://github.com/hieuvanle/codingChallenge/blob/master/leetcodeProblems/05-randomPickWithWeight.java)       |Time: O(nlogn) - Space: O(n)|
 | 6   |                                                                                                                       |            |                                                                                                                                           |                    |
 | 7   |                                                                                                                       |            |                                                                                                                                           |                    |
 | 8   |                                                                                                                       |            |                                                                                                                                           |                    |
@@ -65,3 +65,10 @@ Below are how I approach problems and what I learned when solving LeetCode probl
 
 2. Swap s[i] and s[s.length - i -1].
 
+## [randomPickWithWeight](https://github.com/hieuvanle/codingChallenge/blob/master/leetcodeProblems/05-randomPickWithWeight.java)
+
+1. Generate an array in which each element is the prefix sum of each position in the given array.
+
+2. Generate a random number up to the last prefix sum, then compare with the prefix sum
+
+3. The result is the index of the prefix sum that is right larger than the target.
