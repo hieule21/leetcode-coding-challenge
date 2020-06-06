@@ -11,7 +11,7 @@ Below are how I approach problems and what I learned when solving LeetCode probl
 | 3   | [Two City Scheduling](https://leetcode.com/problems/two-city-scheduling/)                                             | Easy       | [twoCitySchedCost.java](https://github.com/hieuvanle/codingChallenge/blob/master/leetcodeProblems/03-twoCityScheduling.java)              |Time: O(nlogn) - Space: O(n)|
 | 4   | [Reverse String](https://leetcode.com/problems/reverse-string/)                                                       | Easy       | [reverseString.java](https://github.com/hieuvanle/codingChallenge/blob/master/leetcodeProblems/04-reverseString.java)                     |Time: O(n) - Space: O(1)|
 | 5   | [Random Pick with Weight](https://leetcode.com/problems/random-pick-with-weight/)                                     | Medium     | [randomPickWithWeight.java](https://github.com/hieuvanle/codingChallenge/blob/master/leetcodeProblems/05-randomPickWithWeight.java)       |Time: O(nlogn) - Space: O(n)|
-| 6   |                                                                                                                       |            |                                                                                                                                           |                    |
+| 6   | [Queue Reconstruction by Height](https://leetcode.com/problems/queue-reconstruction-by-height/)                       | Medium     | [queueReconstructionByHeight.java](https://github.com/hieuvanle/codingChallenge/blob/master/leetcodeProblems/06-QueueReconstructionByHeight.java)|Time: O(n^2) - Space: O(n)|
 | 7   |                                                                                                                       |            |                                                                                                                                           |                    |
 | 8   |                                                                                                                       |            |                                                                                                                                           |                    |
 | 9   |                                                                                                                       |            |                                                                                                                                           |                    |
@@ -72,3 +72,11 @@ Below are how I approach problems and what I learned when solving LeetCode probl
 2. Generate a random number up to the last prefix sum, then compare with the prefix sum
 
 3. The result is the index of the prefix sum that is right larger than the target.
+
+## [queueReconstructionByHeight](https://github.com/hieuvanle/codingChallenge/blob/master/leetcodeProblems/06-QueueReconstructionByHeight.java)
+
+1. Sort the given array in decreasing order of arr[i][0].
+
+2. If equal, sort in ascending order of arr[i][1].
+
+3. Fill the result array one by one based arr[i][1].
