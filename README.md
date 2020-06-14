@@ -12,7 +12,7 @@ Below are how I approach problems and what I learned when solving LeetCode probl
 | 4   | [Reverse String](https://leetcode.com/problems/reverse-string/)                                                       | Easy       | [reverseString.java](https://github.com/hieuvanle/codingChallenge/blob/master/leetcodeProblems/04-reverseString.java)                     |Time: O(n) - Space: O(1)|
 | 5   | [Random Pick with Weight](https://leetcode.com/problems/random-pick-with-weight/)                                     | Medium     | [randomPickWithWeight.java](https://github.com/hieuvanle/codingChallenge/blob/master/leetcodeProblems/05-randomPickWithWeight.java)       |Time: O(nlogn) - Space: O(n)|
 | 6   | [Queue Reconstruction by Height](https://leetcode.com/problems/queue-reconstruction-by-height/)                       | Medium     | [queueReconstructionByHeight.java](https://github.com/hieuvanle/codingChallenge/blob/master/leetcodeProblems/06-QueueReconstructionByHeight.java)|Time: O(n^2) - Space: O(n)|
-| 7   |                                                                                                                       |            |                                                                                                                                           |                    |
+| 7   | [Coin Change 2](https://leetcode.com/problems/coin-change-2/)                                                         | Medium     | [coinChange2.java](https://github.com/hieuvanle/codingChallenge/blob/master/leetcodeProblems/07-coinChange2.java)                         |Time: O(n\*input\) - Space: O(n)|
 | 8   |                                                                                                                       |            |                                                                                                                                           |                    |
 | 9   |                                                                                                                       |            |                                                                                                                                           |                    |
 | 10  |                                                                                                                       |            |                                                                                                                                           |                    |
@@ -80,3 +80,11 @@ Below are how I approach problems and what I learned when solving LeetCode probl
 2. If equal, sort in ascending order of arr[i][1].
 
 3. Fill the result array one by one based arr[i][1].
+
+## [coinChange2](https://github.com/hieuvanle/codingChallenge/blob/master/leetcodeProblems/07-coinChange2.java)
+
+1. Dynamic Programming - Bottom Up
+
+2. Contruct an array with elements from 0 to input 
+
+3. Number of way making up to input equals to number of way making up to smaller numbers.
