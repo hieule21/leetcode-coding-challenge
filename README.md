@@ -17,7 +17,7 @@ Below are how I approach problems and what I learned when solving LeetCode probl
 | 9   | [Search insert position](https://leetcode.com/problems/search-insert-position/)                                       | Easy       | [searchInsertPosition](https://github.com/hieuvanle/codingChallenge/blob/master/leetcodeProblems/09-searchInsertPosition.java)            |Time: O(n) - Space: O(1)|
 | 10  | [Sort Colors](https://leetcode.com/problems/sort-colors/)                                                             | Medium     | [sortColors](https://github.com/hieuvanle/codingChallenge/blob/master/leetcodeProblems/10-sortColors.java)                                |Time: O(n) - Space: O(1)|
 | 11  | [Power of Two](https://leetcode.com/problems/power-of-two/)                                                           | Easy       | [powerOfTwo](https://github.com/hieuvanle/codingChallenge/blob/master/leetcodeProblems/11-powerOfTwo.java)                                |Time: O(log(n)) - Space: O(1)|
-| 12  |                                                                                                                       |            |                                                                                                                                           |                    |
+| 12  | [Randomized Set](https://leetcode.com/problems/randomized-sete)                                                       | Medium     | [randomizedSet](https://github.com/hieuvanle/codingChallenge/blob/master/leetcodeProblems/12-randomizedSet.java)                          |Time: O(1) - Space: O(n)|
 | 13  |                                                                                                                       |            |                                                                                                                                           |                    |
 | 14  |                                                                                                                       |            |                                                                                                                                           |                    |  
 | 15  |                                                                                                                       |            |                                                                                                                                           |                    |
@@ -117,6 +117,11 @@ Below are how I approach problems and what I learned when solving LeetCode probl
 
 2. Check if they are equal
 
+## [randomizedSet](https://github.com/hieuvanle/codingChallenge/blob/master/leetcodeProblems/12-randomizedSet.java)
 
+1. Combine hash map (for O(1) search) and linked list (for O(1) remove)
 
+2. The values of keys in hash map are their indexes in linked list
+
+3. Insert easily and remove by changing the last element of linked list with target then remove the last position in linked list
 
