@@ -14,7 +14,7 @@ Below are how I approach problems and what I learned when solving LeetCode probl
 | 6   | [Queue Reconstruction by Height](https://leetcode.com/problems/queue-reconstruction-by-height/)                       | Medium     | [queueReconstructionByHeight.java](https://github.com/hieuvanle/codingChallenge/blob/master/leetcodeProblems/06-QueueReconstructionByHeight.java)|Time: O(n^2) - Space: O(n)|
 | 7   | [Coin Change 2](https://leetcode.com/problems/coin-change-2/)                                                         | Medium     | [coinChange2.java](https://github.com/hieuvanle/codingChallenge/blob/master/leetcodeProblems/07-coinChange2.java)                         |Time: O(n\*input\) - Space: O(n)|
 | 8   | [Is Subsequence](https://leetcode.com/problems/is-subsequence/)                                                       | Easy       | [isSubsequence.java](https://github.com/hieuvanle/codingChallenge/blob/master/leetcodeProblems/08-isSubsequence.java)                     |Time: O(n) - Space: O(m)|
-| 9   |                                                                                                                       |            |                                                                                                                                           |                    |
+| 9   | [Search insert position](https://leetcode.com/problems/search-insert-position/)                                       | Easy       | [searchInsertPosition](https://github.com/hieuvanle/codingChallenge/blob/master/leetcodeProblems/09-searchInsertPosition.java)            |Time: O(n) - Space: O(1)|
 | 10  |                                                                                                                       |            |                                                                                                                                           |                    |
 | 11  |                                                                                                                       |            |                                                                                                                                           |                    |
 | 12  |                                                                                                                       |            |                                                                                                                                           |                    |
@@ -94,3 +94,13 @@ Below are how I approach problems and what I learned when solving LeetCode probl
 1. Use a queue to push all the characters of the child input string
 
 2. Loop through the parent input string and looking for the characters in the queue in the parent input string
+
+## [searchInsertPosition](https://github.com/hieuvanle/codingChallenge/blob/master/leetcodeProblems/09-searchInsertPosition.java)
+
+1. If the last element is smaller than target, then result is array.length()
+
+2. If the first element is greater than target, then result is 0
+
+3. Otherwise, loop through each element to find the right position (Either binary search or linear search)
+
+
