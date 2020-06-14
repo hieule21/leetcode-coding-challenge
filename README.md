@@ -16,7 +16,7 @@ Below are how I approach problems and what I learned when solving LeetCode probl
 | 8   | [Is Subsequence](https://leetcode.com/problems/is-subsequence/)                                                       | Easy       | [isSubsequence.java](https://github.com/hieuvanle/codingChallenge/blob/master/leetcodeProblems/08-isSubsequence.java)                     |Time: O(n) - Space: O(m)|
 | 9   | [Search insert position](https://leetcode.com/problems/search-insert-position/)                                       | Easy       | [searchInsertPosition](https://github.com/hieuvanle/codingChallenge/blob/master/leetcodeProblems/09-searchInsertPosition.java)            |Time: O(n) - Space: O(1)|
 | 10  | [Sort Colors](https://leetcode.com/problems/sort-colors/)                                                             | Medium     | [sortColors](https://github.com/hieuvanle/codingChallenge/blob/master/leetcodeProblems/10-sortColors.java)                                |Time: O(n) - Space: O(1)|
-| 11  |                                                                                                                       |            |                                                                                                                                           |                    |
+| 11  | [Power of Two](https://leetcode.com/problems/power-of-two/)                                                           | Easy       | [powerOfTwo](https://github.com/hieuvanle/codingChallenge/blob/master/leetcodeProblems/11-powerOfTwo.java)                                |Time: O(log(n)) - Space: O(1)|
 | 12  |                                                                                                                       |            |                                                                                                                                           |                    |
 | 13  |                                                                                                                       |            |                                                                                                                                           |                    |
 | 14  |                                                                                                                       |            |                                                                                                                                           |                    |  
@@ -110,5 +110,13 @@ Below are how I approach problems and what I learned when solving LeetCode probl
 2. Initiate a variable called current to keep track where we are in the array
 
 3. If 0, swap two numbers at head index and current index. If 1, do nothing. If 2, swap two numbers at tail index and current index
+
+## [powerOfTwo](https://github.com/hieuvanle/codingChallenge/blob/master/leetcodeProblems/11-powerOfTwo.java)
+
+1. Double a number starting at 1 till it reaches input value
+
+2. Check if they are equal
+
+
 
 
