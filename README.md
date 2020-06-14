@@ -13,7 +13,7 @@ Below are how I approach problems and what I learned when solving LeetCode probl
 | 5   | [Random Pick with Weight](https://leetcode.com/problems/random-pick-with-weight/)                                     | Medium     | [randomPickWithWeight.java](https://github.com/hieuvanle/codingChallenge/blob/master/leetcodeProblems/05-randomPickWithWeight.java)       |Time: O(nlogn) - Space: O(n)|
 | 6   | [Queue Reconstruction by Height](https://leetcode.com/problems/queue-reconstruction-by-height/)                       | Medium     | [queueReconstructionByHeight.java](https://github.com/hieuvanle/codingChallenge/blob/master/leetcodeProblems/06-QueueReconstructionByHeight.java)|Time: O(n^2) - Space: O(n)|
 | 7   | [Coin Change 2](https://leetcode.com/problems/coin-change-2/)                                                         | Medium     | [coinChange2.java](https://github.com/hieuvanle/codingChallenge/blob/master/leetcodeProblems/07-coinChange2.java)                         |Time: O(n\*input\) - Space: O(n)|
-| 8   |                                                                                                                       |            |                                                                                                                                           |                    |
+| 8   | [Is Subsequence](https://leetcode.com/problems/is-subsequence/)                                                       | Easy       | [isSubsequence.java](https://github.com/hieuvanle/codingChallenge/blob/master/leetcodeProblems/08-isSubsequence.java)                     |Time: O(n) - Space: O(m)|
 | 9   |                                                                                                                       |            |                                                                                                                                           |                    |
 | 10  |                                                                                                                       |            |                                                                                                                                           |                    |
 | 11  |                                                                                                                       |            |                                                                                                                                           |                    |
@@ -88,3 +88,9 @@ Below are how I approach problems and what I learned when solving LeetCode probl
 2. Contruct an array with elements from 0 to input 
 
 3. Number of way making up to input equals to number of way making up to smaller numbers.
+
+## [isSubsequence](https://github.com/hieuvanle/codingChallenge/blob/master/leetcodeProblems/07-coinChange2.java)
+
+1. Use a queue to push all the characters of the child input string
+
+2. Loop through the parent input string and looking for the characters in the queue in the parent input string
